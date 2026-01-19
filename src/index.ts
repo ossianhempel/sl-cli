@@ -7,7 +7,7 @@ import { CONFIG_KEYS, readConfig, resolveOrigin, writeConfig } from "./config.js
 const program = new Command();
 
 program
-  .name("sl-clie")
+  .name("sl-cli")
   .description("Plan SL journeys and query departures")
   .option("--json", "output JSON")
   .option("--plain", "output line-based text")

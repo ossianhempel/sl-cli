@@ -1,10 +1,10 @@
 {
-  "name": "sl-clie",
+  "name": "sl-cli",
   "version": "0.1.0",
   "private": true,
   "type": "module",
   "bin": {
-    "sl-clie": "dist/index.js"
+    "sl-cli": "dist/index.js"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",

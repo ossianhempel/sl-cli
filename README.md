@@ -1,4 +1,4 @@
-# sl-clie
+# sl-cli
 
 Minimal CLI for SL Journey Planner and Transport APIs.
 
@@ -13,16 +13,16 @@ npm run build
 
 ```bash
 # Set default origin
-sl-clie config set origin "Odenplan"
+sl-cli config set origin "Odenplan"
 
 # Plan a trip (depart now)
-sl-clie plan --to "Slussen"
+sl-cli plan --to "Slussen"
 
 # Plan a trip with arrival time
-sl-clie plan --to "Slussen" --arrive "2026-01-17 12:00"
+sl-cli plan --to "Slussen" --arrive "2026-01-17 12:00"
 
 # Next departures
-sl-clie next --stop "Tekniska hogskolan"
+sl-cli next --stop "Tekniska hogskolan"
 ```
 
 ## Output modes
@@ -33,7 +33,7 @@ sl-clie next --stop "Tekniska hogskolan"
 
 ## Config
 
-Config file: `~/.config/sl-clie/config.json`
+Config file: `~/.config/sl-cli/config.json`
 
 Keys:
 - `origin`

@@ -11,7 +11,7 @@ export type Config = {
 
 export function getConfigPath(): string {
   const base = process.env.XDG_CONFIG_HOME || path.join(os.homedir(), ".config");
-  return path.join(base, "sl-clie", "config.json");
+  return path.join(base, "sl-cli", "config.json");
 }
 
 export function readConfig(): Config {
@@ -38,8 +38,8 @@ export function resolveOrigin(cliValue?: string): string | undefined {
   if (cliValue && cliValue.trim()) {
     return cliValue.trim();
   }
-  if (process.env.SLCLIE_ORIGIN && process.env.SLCLIE_ORIGIN.trim()) {
-    return process.env.SLCLIE_ORIGIN.trim();
+  if (process.env.SLCLI_ORIGIN && process.env.SLCLI_ORIGIN.trim()) {
+    return process.env.SLCLI_ORIGIN.trim();
   }
   const config = readConfig();
   if (config.origin && config.origin.trim()) {
